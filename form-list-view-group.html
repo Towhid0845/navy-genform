@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADMIN PANEL</title>
+  <!-- google font start -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- google font end -->
+  <script src="https://kit.fontawesome.com/3f4c7459cb.js" crossorigin="anonymous"></script>
+  <!-- css file start -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="icons/bootstrap-icons-1.8.2/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/smooth-scrollbar.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- css file end -->
+</head>
+
+<body class="sidebar">
+  <!-- sidebar navigation start -->
+  <section class="dashboard">
+    <div class="toggle-overlay d-block d-lg-none"></div>
+    <div class="navigation-body shadow">
+      <div class="close-mobile-menu d-block d-lg-none">
+        <i class="bi bi-arrow-left"></i>
+      </div>
+      <div class="logo">
+        <a href="index.html">
+          <img class="main-logo" src="images/logo.png" alt="logo" width="130">
+          <img class="mini-logo d-none" src="images/mini-logo.png" alt="mini-logo">
+        </a>
+      </div>
+      <div class="navigation">
+        <div class="top-heading title">
+          <h4>Navigation</h4>
+        </div>
+        <div class="main-menus">
+          <ul id="accordion" class="accordion">
+            <li>
+              <div class="link">
+                <a href="index.html" class="ps-0">
+                  <span class="icon"><i class="bi bi-house-door"></i></span>
+                  <span class="title">
+                    Dashboard
+                    <!-- <span class="arrow float-end"><i class="fa fa-chevron-right"></i></span> -->
+                  </span>
+                </a>
+              </div>
+              <!-- <ul class="submenu title">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <i class="far fa-circle"></i> Level Two Menu
+                        <span class="child-arrow"><i class="fa fa-chevron-down"></i></span>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body third-level">
+                        <ul>
+                          <li><a href="html.html"><i class="fas fa-angle-right"></i> Menu one</a></li>
+                          <li><a href="html.html"><i class="fas fa-angle-right"></i> Menu two</a></li>
+                          <li><a href="html.html"><i class="fas fa-angle-right"></i> Menu three</a></li>
+                          <div class="accordion accordion-flush" id="accordionFlushExample2">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button fourth-level collapsed shadow-none" type="button"
+                                  data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                  aria-controls="flush-collapseTwo">
+                                  <i class="far fa-circle"></i> Level Three Menu
+                                  <span class="child-arrow"><i class="fa fa-chevron-down"></i></span>
+                                </button>
+                              </h2>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse fourth-level-child"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample2">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li><a href="html.html"><i class="fas fa-angle-right"></i> Menu one</a></li>
+                                    <li><a href="html.html"><i class="fas fa-angle-right"></i> Menu two</a></li>
+                                    <li><a href="html.html"><i class="fas fa-angle-right"></i> Menu three</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul> -->
+            </li>
+            <li>
+              <div class="link">
+                <span class="icon"><i class="fas fa-arrows-alt" aria-hidden="true"></i></span>
+                <span class="title">
+                  Master Setup
+                  <span class="arrow float-end"><i class="fa fa-chevron-right"></i></span>
+                </span>
+              </div>
+              <ul class="submenu title">
+                <ul>
+                  <li><a href="html.html"><i class="fas fa-angle-right"></i> Menu one</a></li>
+                  <li><a href="html.html"><i class="fas fa-angle-right"></i> Menu two</a></li>
+                  <li><a href="html.html"><i class="fas fa-angle-right"></i> Menu three</a></li>
+                </ul>
+              </ul>
+            </li>
+            <li>
+              <div class="link">
+                <span class="icon"><i class="fas fa-arrows-alt" aria-hidden="true"></i></span>
+                <span class="title">
+                  Data Sharing
+                  <span class="arrow float-end"><i class="fa fa-chevron-right"></i></span>
+                </span>
+              </div>
+              <ul class="submenu title">
+                <li><a href="pending-genform-list.html"><i class="fas fa-angle-right"></i> Pending Gen Form</a></li>
+                <li><a href="approved-genform-list.html"><i class="fas fa-angle-right"></i> Approved Gen Form</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="link">
+                <a href="" class="ps-0">
+                  <span class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                  <span class="title">
+                    Employees
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="link">
+                <a href="employee-record.html" class="ps-0">
+                  <span class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                  <span class="title">
+                    Employee Record
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li class="">
+              <div class="link">
+                <span class="icon"><i class="fa fa-windows" aria-hidden="true"></i></span>
+                <span class="title">
+                  Gen Form
+                  <span class="arrow float-end"><i class="fa fa-chevron-right"></i></span>
+                </span>
+              </div>
+              <ul class="submenu title">
+                <li><a href="form-list.html"><i class="fas fa-angle-right"></i> Sailor</a></li>
+                <li><a href="form-list.html"><i class="fas fa-angle-right"></i> Officer</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="link">
+                <span class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                <span class="title">
+                  Admin
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="link">
+                <span class="icon"><i class="fa fa-windows" aria-hidden="true"></i></span>
+                <span class="title">
+                  System Settings
+                  <span class="arrow float-end"><i class="fa fa-chevron-right"></i></span>
+                </span>
+              </div>
+              <ul class="submenu title">
+                <ul>
+                  <li><a href="html.html"><i class="fas fa-angle-right"></i> Menu one</a></li>
+                  <li><a href="html.html"><i class="fas fa-angle-right"></i> Menu two</a></li>
+                  <li><a href="html.html"><i class="fas fa-angle-right"></i> Menu three</a></li>
+                </ul>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- collapsed navigation start -->
+      <div class="collapsed-navigation d-none">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="bi bi-house-door"></i>
+            </a>
+            <div class="mini-dropdown-menu">
+              <ul>
+                <li class="menu-title"><a href="index.html" class="mini-dashboard">Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Photoshop</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Html</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> css</a></li>
+
+                <li class="mini-child-menu">
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingthree">
+                        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapsethree" aria-expanded="false"
+                          aria-controls="flush-collapsethree">
+                          <i class="far fa-circle level-icon"></i>
+                          Level Two Menu
+                          <i class="fa fa-chevron-up float-end"></i>
+                        </button>
+                      </h2>
+                      <div id="flush-collapsethree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingthree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <ul class="mini-child-inner-menu">
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Menu One</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Menu Two</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Menu Three</a></li>
+
+
+                            <li class="mini-child-menu mini-fourth-level-button">
+                              <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingfour">
+                                    <button class="accordion-button collapsed shadow-none" type="button"
+                                      data-bs-toggle="collapse" data-bs-target="#flush-collapsefour"
+                                      aria-expanded="false" aria-controls="flush-collapsefour">
+                                      <i class="bi bi-circle level-icon"></i>
+                                      Level Two Menu
+                                      <i class="fa fa-chevron-up float-end"></i>
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapsefour" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                      <ul class="mini-child-inner-menu fourth-level-inner-child-menu">
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Menu One</a></li>
+                                        <li><a href="inde"><i class="fas fa-chevron-right"></i> Menu Two</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Menu Three</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                            </li>
+
+
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                </li>
+
+
+
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-layout-sidebar"></i>
+            </a>
+            <div class="mini-dropdown-menu">
+              <ul>
+                <li class="menu-title"><a href="index.html" class="mini-dashboard">Page layouts</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-bars"></i>
+            </a>
+            <div class="mini-dropdown-menu">
+              <ul>
+                <li class="menu-title"><a href="index.html" class="mini-dashboard">Navigation</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Photoshop</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Html</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> css</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-box"></i>
+            </a>
+            <div class="mini-dropdown-menu">
+              <ul>
+                <li class="menu-title"><a href="index.html" class="mini-dashboard">Basic Components</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Photoshop</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Html</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> css</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-layer-group"></i>
+            </a>
+            <div class="mini-dropdown-menu">
+              <ul>
+                <li class="menu-title"><a href="index.html" class="mini-dashboard">Widget</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Photoshop</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Html</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> css</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-cog spin"></i>
+            </a>
+            <div class="mini-dropdown-menu">
+              <ul>
+                <li class="menu-title"><a href="index.html" class="mini-dashboard">Animations</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-command"></i>
+            </a>
+            <div class="mini-dropdown-menu">
+              <ul>
+                <li class="menu-title"><a href="index.html" class="mini-dashboard">Icons</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-clipboard-check-fill"></i>
+            </a>
+            <div class="mini-dropdown-menu">
+              <ul>
+                <li class="menu-title"><a href="index.html" class="mini-dashboard">Form Components</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Photoshop</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Html</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> css</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-pen-alt"></i>
+            </a>
+            <div class="mini-dropdown-menu">
+              <ul>
+                <li class="menu-title"><a href="index.html" class="mini-dashboard">Form Picker</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Photoshop</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Html</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> css</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-shield-check"></i>
+            </a>
+            <div class="mini-dropdown-menu">
+              <ul>
+                <li class="menu-title"><a href="index.html" class="mini-dashboard">Form Masking</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Photoshop</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Html</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> css</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-quidditch"></i>
+            </a>
+
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-file-spreadsheet"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-bar-chart-steps"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-people"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-cut"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-cloud-upload"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- collapsed navigation end-->
+      <div class="branding text-center">
+        <h6 class="full-brand">
+          Developed By-
+          <a href="https://www.nogorsolutions.com/" target="_blank" class="d-block">Nogor Solutions Limited</a>
+        </h6>
+        <div class="short-brand d-none">
+          <img src="images/nogo-fevicon.png" alt="nogo-fevicon">
+        </div>
+      </div>
+    </div>
+    <!-- main content start -->
+    <div class="main-content-body">
+      <!-- top header start -->
+      <div class="top-header">
+        <div class="topbar">
+          <div class="row">
+            <div class="col-lg-6 left-info-col align-self-center">
+              <div class="left-info d-flex">
+                <div class="logo">
+                  <a href=""><img src="images/logo.png" alt=""></a>
+                </div>
+                <div class="mobile-control-bar d-block d-lg-none">
+                  <i class="fas fa-bars"></i>
+                </div>
+                <div class="control-bar d-none d-lg-block">
+                  <i class="fas fa-bars"></i>
+                </div>
+                <div class="expand">
+                  <i class="fas fa-arrows-alt"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 right-info-col">
+              <div class="right-info header-right-info text-end d-flex justify-content-end align-items-center">
+                <div class="notification dropdown">
+                  <div class="notifi-icon dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="far fa-bell bell"></i>
+                    <sup>3</sup>
+                  </div>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <div class="top d-flex justify-content-between">
+                      <h4>Notification</h4>
+                      <span>Clear All</span>
+                    </div>
+                    <div class="middle">
+                      <div class="msg-box d-flex">
+                        <div class="icon">
+                          <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="text">
+                          <p>Caleb Flakelar commented on Admin</p>
+                          <span>2 minutes ago</span>
+                        </div>
+                      </div>
+                      <div class="msg-box d-flex">
+                        <div class="icon icon-2">
+                          <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="text">
+                          <p>Caleb Flakelar commented on Admin</p>
+                          <span>2 minutes ago</span>
+                        </div>
+                      </div>
+                      <div class="msg-box d-flex">
+                        <div class="icon icon-3">
+                          <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="text">
+                          <p>Caleb Flakelar commented on Admin</p>
+                          <span>2 minutes ago</span>
+                        </div>
+                      </div>
+                      <div class="msg-box d-flex">
+                        <div class="icon icon-4">
+                          <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="text">
+                          <p>Caleb Flakelar commented on Admin</p>
+                          <span>2 minutes ago</span>
+                        </div>
+                      </div>
+                      <div class="msg-box d-flex">
+                        <div class="icon icon-5">
+                          <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="text">
+                          <p>Caleb Flakelar commented on Admin</p>
+                          <span>2 minutes ago</span>
+                        </div>
+                      </div>
+                      <div class="msg-box d-flex">
+                        <div class="icon icon-6">
+                          <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="text">
+                          <p>Caleb Flakelar commented on Admin</p>
+                          <span>2 minutes ago</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="btm text-center">
+                      <a href="#">Show All Notification <i class="fas fa-chevron-down"></i></a>
+                    </div>
+                  </ul>
+                </div>
+                <div class="messages dropdown">
+                  <div class="notifi-mess dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="far fa-comment-alt bell mess"></i>
+                    <sup>9</sup>
+                  </div>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <div class="top d-flex justify-content-between">
+                      <h4>MESSAGES</h4>
+                      <span>Clear All</span>
+                    </div>
+                    <div class="middle">
+                      <div class="msg-box d-flex">
+                        <div class="img">
+                          <img src="images/profile.jpg" alt="profile">
+                        </div>
+                        <div class="text">
+                          <h5>
+                            Donna Seay
+                            <span>2 minutes ago</span>
+                          </h5>
+                          <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                            spring.</p>
+                        </div>
+                      </div>
+                      <div class="msg-box d-flex">
+                        <div class="img">
+                          <img src="images/profile-2.jpg" alt="profile">
+                        </div>
+                        <div class="text">
+                          <h5>
+                            Samantha Francis
+                            <span>2 minutes ago</span>
+                          </h5>
+                          <p>My entire soul, like these sweet mornings of spring.</p>
+                        </div>
+                      </div>
+                      <div class="msg-box d-flex">
+                        <div class="img">
+                          <img src="images/profile.jpg" alt="profile">
+                        </div>
+                        <div class="text">
+                          <h5>
+                            Donna Seay
+                            <span>2 minutes ago</span>
+                          </h5>
+                          <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                            spring.</p>
+                        </div>
+                      </div>
+                      <div class="msg-box d-flex">
+                        <div class="img">
+                          <img src="images/profile-2.jpg" alt="profile">
+                        </div>
+                        <div class="text">
+                          <h5>
+                            Samantha Francis
+                            <span>2 minutes ago</span>
+                          </h5>
+                          <p>My entire soul, like these sweet mornings of spring.</p>
+                        </div>
+                      </div>
+                      <div class="msg-box d-flex">
+                        <div class="img">
+                          <img src="images/profile.jpg" alt="profile">
+                        </div>
+                        <div class="text">
+                          <h5>
+                            Donna Seay
+                            <span>2 minutes ago</span>
+                          </h5>
+                          <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                            spring.</p>
+                        </div>
+                      </div>
+                      <div class="msg-box d-flex">
+                        <div class="img">
+                          <img src="images/profile-2.jpg" alt="profile">
+                        </div>
+                        <div class="text">
+                          <h5>
+                            Samantha Francis
+                            <span>2 minutes ago</span>
+                          </h5>
+                          <p>My entire soul, like these sweet mornings of spring.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="btm text-center">
+                      <a href="#">Show All Messages <i class="fas fa-chevron-down"></i></a>
+                    </div>
+                  </ul>
+                </div>
+                <div class="profile dropdown">
+                  <ul class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="profile-image">
+                      <img src="images/profile.jpg" alt="profile">
+                    </li>
+                    <li>John Doe <i class="fas fa-angle-down"></i></li>
+                  </ul>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li><a href="profile.html"><i class="far fa-user"></i> Profile</a></li>
+                    <li><a href="#"><i class="far fa-envelope"></i> My Messages</a></li>
+                    <li><a href="#"><i class="fas fa-lock"></i> Lock Screen</a></li>
+                    <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- navbar part start -->
+        <nav class="top-navbar">
+          <ul>
+            <li>
+              <a href="">
+                <i class="fa-brands fa-windows"></i>
+                Dashboard
+                <span><i class="fa-solid fa-angle-down"></i></span>
+              </a>
+              <ul>
+                <li><a href="">Analytics</a></li>
+                <li><a href="">CRM</a></li>
+                <li><a href="">Ecommerce</a></li>
+                <li><a href="">Crypto</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">NFT</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-layer-group"></i>
+                Apps
+                <span><i class="fa-solid fa-angle-down"></i></span>
+              </a>
+              <ul>
+                <li><a href="">Analytics</a></li>
+                <li><a href="">CRM</a></li>
+                <li><a href="">Ecommerce</a></li>
+                <li><a href="">Crypto</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">NFT</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-border-all"></i>
+                Layout
+                <span><i class="fa-solid fa-angle-down"></i></span>
+              </a>
+              <ul>
+                <li><a href="">Analytics</a></li>
+                <li><a href="">CRM</a></li>
+                <li><a href="">Ecommerce</a></li>
+                <li><a href="">Crypto</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">NFT</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-regular fa-circle-user"></i>
+                Authentication
+                <span><i class="fa-solid fa-angle-down"></i></span>
+              </a>
+              <ul>
+                <li><a href="">Analytics</a></li>
+                <li><a href="">CRM</a></li>
+                <li><a href="">Ecommerce</a></li>
+                <li><a href="">Crypto</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">NFT</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-regular fa-file-lines"></i>
+                Pages
+                <span><i class="fa-solid fa-angle-down"></i></span>
+              </a>
+              <ul>
+                <li><a href="">Analytics</a></li>
+                <li><a href="">CRM</a></li>
+                <li><a href="">Ecommerce</a></li>
+                <li><a href="">Crypto</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">NFT</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-monument"></i>
+                Landing
+                <span><i class="fa-solid fa-angle-down"></i></span>
+              </a>
+              <ul>
+                <li><a href="">Analytics</a></li>
+                <li><a href="">CRM</a></li>
+                <li><a href="">Ecommerce</a></li>
+                <li><a href="">Crypto</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">NFT</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-cookie-bite"></i>
+                Base Ui
+                <span><i class="fa-solid fa-angle-down"></i></span>
+              </a>
+              <ul>
+                <li><a href="">Analytics</a></li>
+                <li><a href="">CRM</a></li>
+                <li>
+                  <a href="">
+                    Ecommerce
+                    <span class="float-end"><i class="fa-solid fa-angle-right"></i></span>
+                  </a>
+                  <ul>
+                    <li><a href="">Analytics</a></li>
+                    <li><a href="">CRM</a></li>
+                    <li>
+                      <a href="">
+                        Ecommerce
+                        <span class="float-end"><i class="fa-solid fa-angle-right"></i></span>
+                      </a>
+                      <ul>
+                        <li><a href="">Analytics</a></li>
+                        <li><a href="">CRM</a></li>
+                        <li><a href="">Ecommerce</a></li>
+                        <li><a href="">Crypto</a></li>
+                        <li><a href="">Projects</a></li>
+                        <li><a href="">NFT</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="">Crypto</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">NFT</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Crypto</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">NFT</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- top header end -->
+      <!-- breadcrumb start -->
+      <div class="bread-crumb-part">
+        <div class="row">
+          <div class="col-lg-6 small-device-dash">
+            <div class="left-title">
+              <h3>Dashboard</h3>
+            </div>
+          </div>
+          <div class="col-lg-6 small-device-breadcrumb">
+            <div class="right-info text-end">
+              <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li>Form List</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- breadcrumb end -->
+      <!-- content part start -->
+      <div class="content-part">
+        <div class="inner-content">
+          <div class="form-list-view-page">
+            <div class="sorting-data mt-3">
+              <div class="row">
+                <div class="col-sm-6 col-lg-6 ms-auto">
+                  <div class="print-option ms-2 mt-4 ms-sm-0 mt-sm-0 text-start text-sm-end">
+                    <ul>
+                      <li><a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
+                          class="printer" href=""><i class="bi bi-printer-fill"></i></a></li>
+                      <li><a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top" class="pdf"
+                          href=""><i class="fa-solid fa-file-pdf"></i></a></li>
+                      <li><a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
+                          class="excel" href=""><i class="fas fa-file-excel" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="top-info-form">
+              <h5 style="text-align: center;">(সাধারন তথ্য)</h5>
+              <h6>বাঃ নৌ-২৩৮
+                --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------এফ
+                (পিএ)-২৩ </h6>
+
+              <style type="text/css">
+                .tg {
+                  border-collapse: collapse;
+                  border-spacing: 0;
+                }
+
+                .tg td {
+                  border-color: black;
+                  border-style: solid;
+                  border-width: 1px;
+                  font-family: Arial, sans-serif;
+                  font-size: 15px;
+                  overflow: hidden;
+                  padding: 5px 5px;
+                  word-break: normal;
+                }
+
+                .tg th {
+                  border-color: black;
+                  border-style: solid;
+                  border-width: 1px;
+                  overflow: hidden;
+                  padding: 5px 5px;
+                  word-break: normal;
+                }
+
+                .tg .tg-0pky {
+                  border-color: inherit;
+                  text-align: left;
+                  vertical-align: middle
+                }
+              </style>
+
+              <table class="tg" style="width: 100%; margin-top: 20px;">
+                <thead>
+                  <tr>
+                    <th class="tg-0pky" rowspan="2">ব্যক্তিগত নং:</th>
+                    <th class="tg-0pky" rowspan="4" style="min-width: 300px;">G M SARWAR SHOOMON</th>
+                    <th class="tg-0pky" colspan="2">সাধারন তথ্যের ক্রমিক নং</th>
+                  </tr>
+                  <tr>
+                    <th class="tg-0pky">O/</th>
+                    <th class="tg-0pky">16(G)</th>
+                  </tr>
+                  <tr>
+                    <th class="tg-0pky">সরকারি সংখ্যা</th>
+                    <th class="tg-0pky" colspan="2">পদবী</th>
+                  </tr>
+                  <tr>
+                    <th class="tg-0pky"></th>
+                    <th class="tg-0pky" colspan="2">*</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0pky" colspan="2">1. Entitled to draw "শিক্ষা সহায়ক ভাতা" for following 0 child (1
+                      <sup>st</sup> Child):</td>
+
+                    <td class="tg-0pky" colspan="2" rowspan="7">*
+                      সকাল বিকাল <br>01-02-2023
+
+                      <div style="margin-top: 60px;">
+                        for কমান্ডিং অফিসার <br> বাঃ নৌঃ জাঃ HAJI MOHSIN
+                        <br>
+                        তারিখ 29-05-2023
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky" colspan="2" style="padding-left: 30px;">a. H M Zaheen Aarib.</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky" colspan="2">2. JSI 01/16 & NHQ Ltr No. PA/3831/Pay Commission/1541
+                      <br>
+                      dt. 29-06-2010 refers (.)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h5 style="text-align: right; margin-top: 10px; margin-right: 200px;">কপি</h5>
+
+              <ul style="list-style: none; margin-top: 0px;">
+                <li>* অপ্রয়োজনীয় অংশ কাটিতে হইবে। </li>
+                <li>* অফিসারের জন্য 'অ' উপসর্গ এবং নাবিকের জন্য ''নৌ'' উপসর্গ করিতে হইবে। </li>
+              </ul>
+
+              <table style="width: 100%;">
+                <tbody>
+                  <tr>
+                    <td>
+                      <ul style="list-style: none; margin-top: 30px;">
+                        <li></li>
+                        <li>১ম কপি সামরিক হিসাব নিয়ন্ত্রকের নিকট পাঠাইতে হইবে।</li>
+                        <li>২য় কপি
+                          <span>
+                            <span style="padding-left: 10px;">(ক) অফিসারের জন্যে নৌ সদর দপ্তরে পাঠাইতে
+                              হইবে।</span>
+                            <span style="display: block; padding-left:67px;">(খ)নাবিকের জন্য নৌ বদলী কর্তৃপক্ষের
+                              নিকট পাঠাইতে হইবে।</span>
+                          </span>
+                        </li>
+                      </ul>
+                    </td>
+                    <td>
+                      <ul style="list-style: none; margin-top: 30px;">
+                        <li></li>
+                        <li>৩য় কপি একক হিসাব রক্ষকের নিকট পাঠাইতে হইবে।</li>
+                        <li>৪র্থ কপি সংশ্লিষ্ট ব্যক্তিকে প্রদান করিতে হইবে।</li>
+                        <li>৫ম কপি খাদ্যদ্রব্য হিসাবের অনুকুলে যাইবে।</li>
+                        <li>৬ষ্ঠ কপি জাহাজের কপি হিসাবে রাখিতে হইবে।</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <hr>
+
+              <div class="approve-history" style="margin-top: 30px;">
+                <h4 style="margin-bottom: 14px;">Approval History</h4>
+                <table class="tg" style="width: 100%;">
+                  <thead style="background-color: #777EDD; color: #fff; border: 1px solid #000;">
+                    <tr>
+                      <th class="tg-0pky">Approved By</th>
+                      <th class="tg-0pky">Comments Here</th>
+                      <th class="tg-0pky">Date and Time</th>
+                      <th class="tg-0pky">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="tg-0pky" style="font-size: 20px;">Staff Officer</th>
+                      <td class="tg-0pky" rowspan="">
+
+                        <br>
+                        Need to update employee information
+
+                      </td>
+                      <td class="tg-0pky"><b>2023-07-24 <br> 01:38:42 PM</b></td>
+                      <td class="tg-0pky"></td>
+                    </tr>
+                    <tr>
+                      <th class="tg-0pky" style="font-size: 20px;">
+                        <img src="images/signature.png" alt="signature">
+                        <span style="font-weight: normal; margin-top: 8px;display: block;">
+                          Sheikh Tamim Arman <br> Lieutenant Commander BN <br> Staff Officer
+                        </span>
+                      </th>
+                      <td class="tg-0pky" rowspan="">
+                        <span style="font-weight: normal; margin-top: 8px; margin-left: 5px;display: block;">
+                          Employee information update from unit, approved by X
+                        </span>
+                      </td>
+                      <td class="tg-0pky"><b>2023-07-24 <br> 01:38:42 PM</b></td>
+                      <td class="tg-0pky"></td>
+                    </tr>
+                    <tr>
+                      <th class="tg-0pky" style="font-size: 20px;">
+                        Commanding Officer
+                        <br>
+                        <button type="button"
+                          style="padding: 3px 10px; font-weight: 600; border-radius: 3px; background-color: #F1556C; min-width: 140px; color: #fff; border: 0;margin-bottom: 5px;"><i
+                            class="bi bi-arrow-left-circle-fill"></i> Back to LPO</button>
+                      </th>
+                      <td class="tg-0lax">
+                        <textarea rows="5" style="width: 100%;padding: 10px;border-radius: 5px;border: 1px solid #000;"
+                          placeholder="Write your query here..."></textarea>
+                      </td>
+                      <td class="tg-0lax"></td>
+                      <td class="tg-0lax">
+                        <button type="button"
+                          style="padding: 3px 10px; font-weight: 600; border-radius: 3px; background-color: #32c861; min-width: 150px; color: #fff; border: 0;margin-bottom: 5px;"><i
+                            class="bi bi-check-circle-fill"></i> Approved</button> <br>
+                        <button type="button"
+                          style="padding: 3px 10px; font-weight: 600; border-radius: 3px; background-color: #02C0CE; min-width: 150px; color: #fff; border: 0;margin-bottom: 5px;"><i
+                            class="fa-regular fa-pen-to-square"></i> To Be Modified</button> <br>
+                        <button type="button"
+                          style="padding: 3px 10px; font-weight: 600; border-radius: 3px; background-color: #777EDD; min-width: 150px; color: #fff; border: 0;margin-bottom: 5px;"><i
+                            class="fa-regular fa-circle-xmark"></i> Decline</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content part end -->
+    </div>
+    <!-- main content end -->
+  </section>
+  <!-- sidebar navigation end -->
+
+
+  <!-- script file start -->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/smooth-scrollbar.js"></script>
+  <script src="js/script.js"></script>
+  <!-- script file  end-->
+</body>
+
+</html>
